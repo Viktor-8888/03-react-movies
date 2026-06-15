@@ -41,7 +41,7 @@ export default function App() {
   };
   return (
     <div className={css.app}>
-      <Toaster position="top-center" />
+      <Toaster position="top-center" reverseOrder={false} />
 
       <SearchBar onSubmit={handleSearch} />
       {isLoading && <Loader />}
